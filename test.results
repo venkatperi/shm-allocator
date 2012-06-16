@@ -1,0 +1,24 @@
+[----------] 11 tests from ShmAllocator
+[ RUN      ] ShmAllocator.allocating_zero_items_will_return_null_pointer
+[       OK ] ShmAllocator.allocating_zero_items_will_return_null_pointer (0 ms)
+[ RUN      ] ShmAllocator.no_issue_allocating_one_item
+[       OK ] ShmAllocator.no_issue_allocating_one_item (0 ms)
+[ RUN      ] ShmAllocator.allocating_with_a_null_or_bad_name_is_bad
+[       OK ] ShmAllocator.allocating_with_a_null_or_bad_name_is_bad (0 ms)
+[ RUN      ] ShmAllocator.no_two_allocators_are_equal_by_design
+[       OK ] ShmAllocator.no_two_allocators_are_equal_by_design (0 ms)
+[ RUN      ] ShmAllocator.deallocate_on_good_data_is_ok
+[       OK ] ShmAllocator.deallocate_on_good_data_is_ok (1 ms)
+[ RUN      ] ShmAllocator.deallocate_on_null_is_bad
+[       OK ] ShmAllocator.deallocate_on_null_is_bad (0 ms)
+[ RUN      ] ShmAllocator.deallocating_from_another_alloc_is_bad
+[       OK ] ShmAllocator.deallocating_from_another_alloc_is_bad (0 ms)
+[ RUN      ] ShmAllocator.two_allocators_on_the_same_mem_see_the_same
+[       OK ] ShmAllocator.two_allocators_on_the_same_mem_see_the_same (0 ms)
+[ RUN      ] ShmAllocator.memcpy_to_bad_address_is_bad
+[       OK ] ShmAllocator.memcpy_to_bad_address_is_bad (0 ms)
+[ RUN      ] ShmAllocator.using_alloc_after_its_gone_is_bad
+[       OK ] ShmAllocator.using_alloc_after_its_gone_is_bad (0 ms)
+[ RUN      ] ShmAllocator.if_one_dies_the_other_alloc_can_still_use_mem
+[       OK ] ShmAllocator.if_one_dies_the_other_alloc_can_still_use_mem (0 ms)
+[----------] 11 tests from ShmAllocator (1 ms total)
